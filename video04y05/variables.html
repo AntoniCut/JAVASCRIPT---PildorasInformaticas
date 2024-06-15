@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Variables, Operadores - Curso JavaScript PildorasInformáticas </title>
+
+    <script>
+
+        //  Declaración de Variables.
+        var nombre = "Antonio";
+        var puntuacion = 0;
+        var record;
+            record = 5000;
+        
+        //  Ventanas Emergentes.
+        alert(` Nombre: ${nombre} puntuacion: ${puntuacion} record: ${record}`);
+        alert(5+6*3);     //  23.
+        alert((5+6)*3);   //  33.
+
+        //  Declaracion de Variables y Operaciones.
+        var precioUnidad, cantidad, total;
+        precioUnidad = 5;
+        cantidad = 100
+        total = precioUnidad * cantidad;
+        document.write("<h4 style='text-align: center;'> El importe total de la compra es: " + total +  " € </h4>");
+
+        //  Errores.
+        var camisetas = "5", pantalones = 5, totalArticulos;
+        totalArticulos = camisetas + pantalones;        
+        alert(totalArticulos);                              //  55.
+        totalArticulos = Number(camisetas) + pantalones;    //  10.
+        alert(totalArticulos);
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center;"> Variables, Operadores </h1>
+    
+</body>
+
+</html>

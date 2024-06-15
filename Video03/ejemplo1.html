@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Video 03 - Hola Alumnos - Curso JavaScript PildorasInformáticas </title>
+    <link href="css/micss.css" rel="stylesheet">
+
+    <!--  **********  Importación de la Libreria jQuery  **********  -->
+    <script src="jQuery/jquery-1.6.3.min.js"> </script>
+
+    <!--  **********  Importación Archivo JavaScript  **********  -->
+    <script src="js/ejemplo1.js"> </script>
+
+</head>
+
+<body>
+
+    <h1> 
+
+        <!--  **********  Codigo JavaScript  **********  -->
+        <script> 
+            document.write("Hola Alumnos"); 
+        </script> 
+    </h1>
+
+    <p> Bienvenidos al curso de JavaScript de <span> Píldoras Informáticas </span> </p>
+    <img src="imgs/arbol.jpg" width="35%">
+
+
+    <!--  **********  Codigo jQuery  **********  -->
+    <script> 
+    
+        $(document).ready(function () {
+
+            console.log("Documento Cargado");
+
+            $("img").hover(function () {
+                    
+                $(this).css("opacity", "0.5")
+                    console.log("Entra");
+                }, function () {
+                    console.log("sale");
+                    $(this).css("opacity", "1")
+                }
+            );
+        
+        });
+
+    </script>
+
+</body>
+
+</html>
