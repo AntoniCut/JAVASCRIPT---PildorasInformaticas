@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Arrays - Video 7 - JavaScript PildorasInformáticas </title>
+  <link rel="stylesheet" href="css/micss.css">
+
+  <!--  **********  Código JS  **********  -->
+  <script>
+
+    var articulos = [];
+    articulos = ["Zapatillas", "Camiseta", "Pantalón", "Calcetines"];
+
+    //  var articulos = new Array("Zapatillas", "Camiseta", "Pantalón", "Calcetines");
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="contenedor">
+
+    <div class="header">
+      <p class="logo"> JavaScript Arrays <i class="mm"> Píldoras Informáticas </i> </p>
+    </div>
+
+    <div class="contenido">
+
+      <div class="principal">
+
+        <h1>Manejando Arrays</h1>
+
+        <!--  **********  Código JS  **********  -->
+        <script>
+
+          //  Listado de Articulos.
+          document.write("<p> El primer articulo es: <strong> " + articulos[0] + " </strong> </p>");
+          document.write("<p> El Segundo articulo es: <strong> " + articulos[1] + " </strong> </p>");
+          document.write("<p> El Tercer articulo es: <strong> " + articulos[2] + " </strong> </p>");
+          document.write("<p> El Cuarto articulo es: <strong> " + articulos[3] + " </strong> </p> <hr>");
+
+          //  Agregar elementos.
+          articulos.unshift("Balón");   //  Agrega al inicio del array.
+          articulos.push(prompt("Introduce un Articulo: "));    //  Agrega al final del array.
+
+          //  Listado de Articulos con bucle 'for'.
+          document.write("<p> Añadimos 2 Articulos... </p>");
+          for (var i = 0; i < articulos.length; i++) document.write("<p> &nbsp; &nbsp; &nbsp; <strong>" + articulos[i] + " </strong> </p>");
+
+          //  Eliminar elementos.
+          articulos.shift();      //  Elimina el primer elemento.
+          articulos.pop();        //  Elimina el ultimo elemento.
+
+          //  Listado de Articulos con bucle 'for'.
+          document.write("<p> Añadimos 2 Articulos... </p>");
+          for (var i = 0; i < articulos.length; i++) document.write("<p> &nbsp; &nbsp; &nbsp; <strong>" + articulos[i] + " </strong> </p>");
+
+        </script>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
