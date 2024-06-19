@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Video 09 y 10 - POO - Curso JavaScript PildorasInformáticas </title>
+</head>
+
+<body>
+
+    <br> <br> <br> <br> <br>
+    <input type="button" id="boton1" style="display: block; margin: auto;"> <br> <br>
+    <input type="button" id="boton2" style="display: block; margin: auto;"> <br> <br>
+    <input type="text" id="micuadro" style="display: block; margin: auto;">
+
+    <!--  **********  Código JS  **********  -->
+    <script>
+
+        var miboton1    = document.getElementById("boton1");
+        var miboton2    = document.getElementById("boton2");
+        var cuadroTexto = document.getElementById("micuadro");
+        
+
+        //  Prpopiedades de un objeto, 'boton1'.
+        miboton1.style.width = "300px";
+        miboton1.style.height = "50px";
+        miboton1.value = "Boton1";
+
+        //  Prpopiedades de un objeto, 'boton2'.
+        miboton2.style.width = "300px";
+        miboton2.style.height = "50px";
+        miboton2.value = "Boton1";
+
+        //  Metodos de un objeto.
+        miboton2.focus();
+        cuadroTexto.style.backgroundColor = "red";
+        cuadroTexto.style.background = "red";
+        cuadroTexto.style.color = "white";
+        cuadroTexto.value = "Escriba aquí...";
+        cuadroTexto.style.height = "50px";
+
+    </script>
+
+</body>
+
+</html>
