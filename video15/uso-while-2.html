@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Video 15 - Uso de While 2 - Curso JavaScript PildorasInformáticas </title>
+
+  <style>
+    #contenedor {
+      width: 25%;
+      background-color: #ffc;
+      margin: auto;
+      padding: 15px;
+    }
+  </style>
+
+    <!--  **********  Código JS  **********  -->
+    <script>
+
+      var nombre, edad, poblacion;
+  
+      nombre = prompt("Introduce tu Nombre, por favor:");
+      edad = prompt("Introduce tu Edad, por favor:");
+
+      while(edad <=0 || edad > 105) {
+        edad = prompt("Introduce tu Edad que sea valida, por favor:");
+      }
+
+      poblacion = prompt("Introduce tu Poblacion, por favor:");
+  
+    </script>
+
+</head>
+
+<body>
+
+  <div id="contenedor">
+    
+    <p> 
+      Nombre: 
+      <script> document.write(nombre) </script>
+    </p>
+
+    <p> 
+      Edad: 
+      <script> document.write(edad) </script>
+    </p>
+    
+    <p> 
+      Población: 
+      <script> document.write(poblacion) </script>
+    </p>
+
+  </div>
+
+</body>
+
+</html>

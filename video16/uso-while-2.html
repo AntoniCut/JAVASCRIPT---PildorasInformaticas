@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Video 16 - Uso de While 2 - Curso JavaScript PildorasInformáticas </title>
+
+  <style>
+    #contenedor {
+      width: 25%;
+      background-color: #ffc;
+      margin: auto;
+      padding: 15px;
+    }
+  </style>
+
+    <!--  **********  Código JS  **********  -->
+    <script>
+
+      var nombre, edad, poblacion;
+  
+      nombre = prompt("Introduce tu Nombre, por favor:", "Nombre...");
+      while(!isNaN(nombre)) {
+        nombre = prompt("Introduce tu Nombre que sea valido, por favor:", "Nombre...");
+      }
+
+      edad = prompt("Introduce tu Edad, por favor:", "Edad...");
+      while(edad <=0 || edad > 105 || isNaN(edad)) {
+        edad = prompt("Introduce tu Edad que sea valida, por favor:", "Edad...");
+      }
+
+      poblacion = prompt("Introduce tu Poblacion, por favor:", "Poblacion...");
+      while(!isNaN(poblacion)) {
+        poblacion = prompt("Introduce tu Poblacion que sea valida, por favor:", "Poblacion...");
+      }
+
+    </script>
+
+</head>
+
+<body>
+
+  <div id="contenedor">
+    
+    <p> 
+      Nombre: 
+      <script> document.write(nombre) </script>
+    </p>
+
+    <p> 
+      Edad: 
+      <script> document.write(edad) </script>
+    </p>
+    
+    <p> 
+      Población: 
+      <script> document.write(poblacion) </script>
+    </p>
+
+  </div>
+
+</body>
+
+</html>
