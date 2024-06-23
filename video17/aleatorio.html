@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Video 17 - Aleatorio - Curso JavaScript PildorasInformáticas </title>
+</head>
+
+<body>
+
+
+  <!--  **********  Código JS  **********  -->
+  <script>
+
+    var aleatorio = Math.round(Math.random() * 100);
+    console.log(aleatorio);
+    var minun = 0, intentos = 0;
+
+    do {
+      
+      var minum = parseInt(prompt("Introduce un numero entre 0 y 100:"));
+
+      if(aleatorio > minun) alert("Mas Alto");
+      if(aleatorio < minun) alert("Mas Bajo");
+      intentos++;
+            
+    } while (minum != aleatorio);
+
+    alert("Has Acertado y Has consumido " + intentos + " intentos.");
+
+  </script>
+
+</body>
+
+</html>
