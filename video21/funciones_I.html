@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Video 21- Funciones I - Curso JavaScript PildorasInformáticas </title>
+</head>
+
+<body>
+
+  <center>
+    <h1> Funciones </h1>
+
+    <p> <strong> ¿Y que dia es hoy? </strong> </p>
+    <p> Hoy es Dia: <span id="fecha"> </span> </p>
+
+  </center>
+
+  <!--  **********  Código JS  **********  -->
+  <script>
+    
+    function dia_de_hoy() {
+      
+      var hoy = new Date();
+      document.getElementById("fecha").innerHTML = hoy.toDateString();
+
+    }
+
+    // Llamar a la función para mostrar la fecha
+    dia_de_hoy();
+
+  </script>
+
+</body>
+
+</html>

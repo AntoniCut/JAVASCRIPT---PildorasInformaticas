@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Video 22- Funciones Argumentos - Curso JavaScript PildorasInformáticas </title>
+</head>
+
+<body>
+
+  <center>
+    
+    <h1> Funciones Argumentos </h1>
+
+    <p> Hola: <strong> <span id="nombre"> </span> </strong> Bienvenido a mi Página Web </p>
+
+  </center>
+
+  <!--  **********  Código JS  **********  -->
+  <script>
+    
+    var nombrePersona = prompt("Introduce tu Nombre: ");
+
+
+    //  Definimos la función.
+    function escribe_nombre(nombrePersona) {
+      
+      var nombre = document.getElementById("nombre");
+          nombre.innerHTML = nombrePersona;
+
+    }
+
+    // Llamar a la función para mostrar el nombre.
+    escribe_nombre(nombrePersona);
+
+  </script>
+
+</body>
+
+</html>

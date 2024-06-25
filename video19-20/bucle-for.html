@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Video 19 y 20 - Bucle For - Curso JavaScript PildorasInformáticas </title>
+</head>
+
+<body>
+
+  <h1> <center> Bucle FOR </center> </h1>
+
+  <!--  **********  Código JS  **********  -->
+  <script>
+
+    window.addEventListener("DOMContentLoaded", () => {
+
+      console.log("Documento Cargado!!");
+
+      for (var i = 0; i < 10; i++) alert("Hola " + (i + 1) + " veces.");
+
+      var meses = ["Enero", "Febrero", "Marzo","Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+      for(var i=0; i<meses.length; i++) document.write(meses[i] + "<br>");
+    
+      
+      //  **********  Otro Ejemplo  **********
+
+      var trabajadores = new Array();
+      var persona = "";
+      var contador = 0;
+
+      while(persona !="salir") {
+
+        persona = prompt("Introduce Nombre del Trabajador: (Para Salir introduce 'salir')");
+        trabajadores[contador] = persona;
+        contador++;
+      
+      }
+
+      trabajadores.pop();   //  Eliminamos la ultima posicion del array.
+
+      document.write("<h4> *****  Listado de Trabajadores  ***** </h4>");
+      for(var i=0; i<trabajadores.length; i++) document.write("<h6>" + trabajadores[i] + "</h6>")
+
+
+    });
+
+
+  </script>
+
+</body>
+
+</html>
