@@ -1,0 +1,53 @@
+﻿<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Video 23- Calculadora Arcaica - Curso JavaScript PildorasInformáticas </title>
+
+
+  <!--  **********  Código JS  **********  -->
+  <script>
+
+    function suma(num1, num2) {
+      alert("La suma es: " + (num1 + num2));
+    }
+    function resta(num1, num2) {
+      alert("La resta es: " + (num1 - num2));
+    }
+    function multiplicar(num1, num2) {
+      alert("La multiplicacion es: " + (num1 * num2));
+    }
+    function division(num1, num2) {
+      alert("La division es: " + (num1 / num2));
+    }
+
+
+    var repetir = "si";
+
+    do {
+
+      var operacion = prompt("¿Que operación desea realizar?");
+      var operador1 = parseInt(prompt("Introduce el primer nº"));
+      var operador2 = parseInt(prompt("Introduce el segundo nº"));
+
+      if (operacion == "suma") suma(operador1, operador2);
+      else if (operacion == "resta") resta(operador1, operador2);
+      else if (operacion == "multiplicacion") multiplicar(operador1, operador2);
+      else if (operacion == "division") division(operador1, operador2);
+      else alert("Operación No Valida");
+
+      repetir = prompt("¿ Deseas Repetir ? (si/no)");
+
+    } while (repetir == "si");
+
+  </script>
+
+</head>
+
+<body>
+
+  <h1> <center> Calculadora Arcaica </center> </h1>
+
+</body>
+
+</html>

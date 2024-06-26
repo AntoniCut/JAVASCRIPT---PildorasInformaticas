@@ -1,0 +1,41 @@
+﻿<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Video 24- Funciones y Eventos - Curso JavaScript PildorasInformáticas </title>
+
+
+  <!--  **********  Código JS  **********  -->
+  <script>
+
+    function aviso() {
+      alert("Has pulsado en la imagen");
+    }
+
+    function ponerEncima() {
+      alert("Has puesto el raton encima de la imagen");
+    }
+
+    function salirImagen() {
+      alert("Has sacado el raton de la imagen");
+    }
+
+
+  </script>
+ 
+</head>
+
+<body>
+
+  <center>
+    <h1> Funciones y Eventos </h1>
+    <img src="imgs/1.jpg" width="420" height="286" 
+         onclick="aviso()" 
+         onmouseover="ponerEncima()"
+         onmouseout="salirImagen()"
+    >
+  </center>
+
+</body>
+
+</html>
